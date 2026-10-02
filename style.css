@@ -2,6 +2,10 @@ header{
     display: flex;
     align-items: center;
     gap: 10px;
+    background: repeating-linear-gradient(to right,#fdd099, #f5d5ad, 20px, #fffbf7 20px, #ffffff 40px);
+    border-radius: 15px;
+    border: 2px solid #f5d5ad;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 header img{
@@ -14,6 +18,32 @@ header h1{
     margin: 0;
 }
 
-header nav{
+.headercolor{
+    background-image: linear-gradient(to bottom, #fdbb6b, #ffffff);
+}
+
+header nav{    
+    display: flex;
+    align-items: center;
     margin-left: auto;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+    padding: 3px 10px;
+    transition: transform 0.3s ease;
+}
+
+nav p{
+    padding: 3px 10px;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover{
+    transform: scale(1.1);
+}
+
+nav p:hover{
+    transform: scale(1.1);
 }
